@@ -1,0 +1,158 @@
+ * {
+    margin: 0;
+    padding: 0;
+ }
+ body {
+    background-image: url(img/background.png);
+    background-size: cover; /*Redimensione a imagem de fundo para cobrir todo o recipiente*/
+    background-repeat: no-repeat; /*A imagem só será mostrada uma vez*/
+    width: 100vw; /*Em relação a 1% da largura*/
+    height: 100vh; /*Em relação a 1% da altura!o tamanho da janela do navegador. Se a porta de visão tiver 50cm de largura, 1vw = 0,5cm.*/
+
+    font-family: 'Advent Pro', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box; /*A propriedade define como a largura e a altura de um elemento são calculadas*/
+    
+    width: 100%; /*Largura*/
+
+    padding: 64px 24px; /* cima */ /*baixo*/
+    
+}
+.container-header {
+    display: flex;
+    justify-content: space-between; /*Os itens terão espaço entre eles*/
+    align-items: center;
+    width: 100%;
+}
+.container-header ul {
+    display: flex;
+    gap: 56px; /* distância entre linhas ou colunas*/
+}
+.container-header li {
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+.container-header li a {
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.logo {
+    width: 120px;
+    height: 40px;
+}
+.container-button {
+    display: flex;
+    gap: 32px;
+}
+.menu-button {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+}
+.menu-button .line {
+    background-color: #FFFFFF;
+    width: 28px;
+    height: 4px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    width: 100%;
+    min-height: calc(100vh - 168px);
+
+    padding: 0 24px;
+}
+
+
+
+.home-page {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    width: 100%;
+    
+}
+
+.grid-dot {
+    display: flex;
+   
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    position: fixed;
+    
+    width: 96px;
+    height: 96px;
+
+    top: 35%;
+    left: 18%;
+}
+
+.grid-dot .dot {
+    background-color: white;
+    
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+}
+.home-info {
+    
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.home-info h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.home-info p {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.home-info a {
+
+    background-color: #274611;
+    color: white;
+
+    font-size: 12px;
+    
+    text-decoration: none;
+    text-align: center;
+
+    width: 60px; /* se for -60px quebrará a frase*/
+
+    padding: 6px;
+    margin-top: 24px;
+
+
+}
+.frase {
+    padding-top: 200px;
+    padding-left: 247px;
+}
