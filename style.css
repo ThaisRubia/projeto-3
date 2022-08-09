@@ -44,6 +44,9 @@ header {
     text-decoration: none;
 }
 .logo {
+    display: flex;
+    padding-left: 220px;
+
     width: 120px;
     height: 40px;
 }
@@ -51,11 +54,16 @@ header {
     display: flex;
     gap: 32px;
 }
+.icon {
+    width: 24px;
+    height: 24px;
+}
 .menu-button {
     display: flex;
     flex-direction: column;
 
     gap: 6px;
+    padding-right: 220px ;
 }
 .menu-button .line {
     background-color: #FFFFFF;
@@ -152,7 +160,27 @@ main {
 
 
 }
+.abstract-lines {
+    display: flex;
+    background-image: url("img/lines.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    
+    padding-left: 100px;
+
+    width: 400px;
+    height: 270px;
+
+    top: 18%;
+    left: 20%;
+}
+
+
 .frase {
-    padding-top: 200px;
-    padding-left: 247px;
+    display: flex;
+    padding-top: 10px;
+    padding-left: 210px;
+    
 }
